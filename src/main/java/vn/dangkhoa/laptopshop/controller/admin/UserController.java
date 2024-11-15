@@ -44,7 +44,7 @@ public class UserController {
         List<User> arrUsers = this.userService.getAllUsersByEmail("1@gmail.com");
         System.out.println(arrUsers);
 
-        model.addAttribute("eric", "test");
+        model.addAttribute("dk", "test");
         model.addAttribute("dangkhoa", "from controller with model");
         return "hello";
     }
@@ -149,8 +149,8 @@ public class UserController {
     }
 
     @PostMapping("/admin/user/delete")
-    public String postDeleteUser(Model model, @ModelAttribute("newUser") User eric) {
-        this.userService.deleteAUser(eric.getId());
+    public String postDeleteUser(Model model, @ModelAttribute("newUser") User dk) {
+        this.userService.deleteAUser(dk.getId());
         return "redirect:/admin/user";
     }
 }

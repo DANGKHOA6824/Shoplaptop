@@ -10,7 +10,7 @@ import vn.dangkhoa.laptopshop.domain.User;
 //crud: create, read, update, delete
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-    User save(User eric);
+    User save(User dk);
 
     void deleteById(long id);
 
