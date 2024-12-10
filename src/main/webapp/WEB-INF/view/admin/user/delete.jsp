@@ -48,6 +48,8 @@ uri="http://www.springframework.org/tags/form" %>
                     method="post"
                     action="/admin/user/delete"
                     modelAttribute="newUser"
+
+
                   >
                     <div class="mb-3" style="display: none">
                       <label class="form-label">Id:</label>

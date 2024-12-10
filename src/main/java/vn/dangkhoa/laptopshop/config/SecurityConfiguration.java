@@ -39,6 +39,7 @@ public class SecurityConfiguration {
         authProvider.setUserDetailsService(userDetailsService);
         authProvider.setPasswordEncoder(passwordEncoder);
         // authProvider.setHideUserNotFoundExceptions(false);
+        //configauthen
         return authProvider;
     }
 
