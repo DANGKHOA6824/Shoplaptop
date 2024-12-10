@@ -46,6 +46,7 @@
                                         <li><a class="dropdown-item" href="#">Quản lý tài khoản</a></li>
 
                                         <li><a class="dropdown-item" href="/order-history">Lịch sử mua hàng</a></li>
+                                        <li><a class="dropdown-item" href="/admin">trang quản trị</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>

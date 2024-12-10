@@ -49,9 +49,7 @@ public class CustomSuccessHandler implements AuthenticationSuccessHandler {
             return;
         }
         session.removeAttribute(WebAttributes.AUTHENTICATION_EXCEPTION);
-        // get email
         String email = authentication.getName();
-        // query user
         User user = this.userService.getUserByEmail(email);
         if (user != null) {
             session.setAttribute("user", user);
@@ -70,7 +68,7 @@ public class CustomSuccessHandler implements AuthenticationSuccessHandler {
 
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
-            Authentication authentication) throws IOException, ServletException {
+                                        Authentication authentication) throws IOException, ServletException {
 
         String targetUrl = determineTargetUrl(authentication);
 

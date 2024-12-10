@@ -38,7 +38,7 @@ public class UserController {
         this.uploadService = uploadService;
         this.passwordEncoder = passwordEncoder;
     }
-
+    
     @RequestMapping("/")
     public String getHomePage(Model model) {
         List<User> arrUsers = this.userService.getAllUsersByEmail("1@gmail.com");
@@ -65,7 +65,7 @@ public class UserController {
             // TODO: handle exception
         }
 
-        Pageable pageable = PageRequest.of(page - 1, 1);
+        Pageable pageable = PageRequest.of(page - 1, 5);
         Page<User> usersPage = this.userService.getAllUsers(pageable);
         List<User> users = usersPage.getContent();
         model.addAttribute("users1", users);

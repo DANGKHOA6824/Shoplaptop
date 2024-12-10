@@ -80,7 +80,7 @@ public class SecurityConfiguration {
                         .maxSessionsPreventsLogin(false))
 
                 .logout(logout -> logout.deleteCookies("JSESSIONID").invalidateHttpSession(true))
-
+//authen
                 .rememberMe(r -> r.rememberMeServices(rememberMeServices()))
                 .formLogin(formLogin -> formLogin
                         .loginPage("/login")
